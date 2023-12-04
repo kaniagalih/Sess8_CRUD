@@ -1,10 +1,10 @@
 @extends('layout.template')
-
+<html lang="en">
 <!-- START DATA -->
 @section('konten')
 
 <div class="text-center">
-    <h1>BodyFit Pilates</h1>
+    <h1>Selamat Datang Di BodyFit Pilates!</h1>
 </div>
 
 <div class="my-3 p-3 bg-body rounded shadow-sm">
@@ -27,7 +27,7 @@
                 <th class="col-md-1">No</th>
                 <th class="col-md-3">ID</th>
                 <th class="col-md-4">Nama</th>
-                <th class="col-md-2">Type</th>
+                <th class="col-md-2">Tipe</th>
                 <th class="col-md-2">Aksi</th>
             </tr>
         </thead>

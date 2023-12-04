@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App;
 
 class memberController extends Controller
 {
@@ -29,10 +30,24 @@ class memberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create() //menampilkan form
+    public function createEn() //menampilkan form
     {
+        App::setLocale('en');
         return view('member.create');
     }
+
+    public function createId() //menampilkan form
+    {
+        App::setLocale('id');
+        return view('member.create');
+    }
+
+    // public function create($en = 'id') //menampilkan form
+    // {
+    //     App::setLocale($en);
+    //     return view('member.create');
+    // }
+
 
     /**
      * Store a newly created resource in storage.

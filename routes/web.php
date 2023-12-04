@@ -18,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('member', memberController::class);
+// Route::resource('member/', memberController::class);
+Route::get('/create/id', [memberController::class, 'createId']);
+Route::get('/create/en', [memberController::class, 'createEn']);
